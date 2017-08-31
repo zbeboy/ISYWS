@@ -1,0 +1,9 @@
+/* pages/test/test.wxss */
+.test-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.test-item {
+  margin: 10rpx;
+}

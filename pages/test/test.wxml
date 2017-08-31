@@ -1,0 +1,6 @@
+<!--pages/test/test.wxml-->
+<view class="container test-list">
+  <block wx:for="{{tests}}" wx:for-item="test" wx:key="*this">
+    <text class="test-item">{{index + 1}}. {{test}}</text>
+  </block>
+</view>

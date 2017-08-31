@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="ad_popError" wx:if="{{popErrorMsg}}">{{popErrorMsg}}</view>
+<section class="login-form-wrap">
+  <view class="title">
+    <image class="title-image" src="https://www.zbeboy.top/images/ISY.png" background-size="cover"></image>
+    <text class="title-name">ISY校园</text>
+  </view>
+  <form bindsubmit="formSubmit" class="login-form">
+    <view class="section">
+      <input style="color:{{usernameColor}}" name="username" type="text" placeholder="邮箱" focus="true" />
+    </view>
+    <view class="section">
+      <input style="color:{{passwordColor}}" name="password" type="password" placeholder="密码" />
+    </view>
+
+    <view class="btn-area">
+      <button formType="submit" type="primary" class="login-btn"> 登 录 </button>
+    </view>
+  </form>
+</section>

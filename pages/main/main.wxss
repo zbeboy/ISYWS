@@ -1,0 +1,12 @@
+/* pages/main/main.wxss */
+.mainInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+	width: 90%;
+	padding: 5%;
+	margin: 0 auto;
+}

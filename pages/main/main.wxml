@@ -1,0 +1,11 @@
+<!--pages/main/main.wxml-->
+<view class="container">
+  <view class="mainInfo">
+    <text>欢迎使用ISY</text>
+  </view>
+</view>
+<view class="main">
+  <button type="default"> 
+        实习查询
+  </button>
+</view>
