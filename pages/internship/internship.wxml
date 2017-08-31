@@ -1,2 +1,40 @@
 <!--pages/internship/internship.wxml-->
-<text>pages/internship/internship.wxml</text>
+  <scroll-view scroll-y class="main">
+    <view class="item" wx:for="{{internshipReleases}}" wx:for-item="internship" wx:key="*this">
+      <view class="wrapper1">
+        <view class="box">{{internship.internshipTitle}}</view>
+      </view>
+      <view class="wrapper1">
+        <view class="box">
+        {{internship.schoolName}}  
+        {{internship.collegeName}}  
+        {{internship.departmentName}}  
+        {{internship.allowGrade}}级</view>
+      </view>
+      <view class="wrapper1">
+        <view class="box">实习类型：{{internship.internshipTypeName}}</view>
+      </view>
+      <view class="wrapper1">
+        <view class="box">教师分配开始时间：{{internship.teacherDistributionStartTimeStr}}</view>
+      </view>
+      <view class="wrapper1">
+        <view class="box">教师分配结束时间：{{internship.teacherDistributionEndTimeStr}}</view>
+      </view>
+      <view class="wrapper1">
+        <view class="box">实习申请开始时间：{{internship.startTimeStr}}</view>
+      </view>
+      <view class="wrapper1">
+        <view class="box">实习申请结束时间：{{internship.endTimeStr}}</view>
+      </view>
+      <view class="wrapper1">
+        <view class="box">专业：
+          <block wx:for="{{internship.sciences}}" wx:for-item="science" wx:key="*this">
+            <text>{{science.scienceName}}</text>
+          </block>
+        </view>
+      </view>
+      <view class="wrapper1">
+        <view class="box">发布人：{{internship.realName}} {{internship.releaseTimeStr}}</view>
+      </view>
+    </view>
+  </scroll-view>

@@ -9,10 +9,6 @@ Page({
   },
   // OAuth登录
   formSubmit: function (e) {
-
-    this.debugNav();
-  return;
-
     var that = this;
     // 账号与密码
     var username = e.detail.value.username;
@@ -77,7 +73,6 @@ Page({
       },
       method: 'POST',
       success: function (res) {
-        console.log(res.data);
         var oauthInfo = res.data;
         if (oauthInfo.error) {
           that.setData(
@@ -98,10 +93,5 @@ Page({
       this.setData({ popErrorMsg: '' });
       clearTimeout(fadeOutTimeout);
     }, 3000);
-  },
-  debugNav(){
-    wx.navigateTo({
-      url: '../main/main'
-    });
   }
 })

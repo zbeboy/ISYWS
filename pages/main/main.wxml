@@ -5,7 +5,7 @@
   </view>
 </view>
 <view class="main">
-  <button type="default"> 
+  <button bindtap="internshipViewTap" type="default"> 
         实习查询
   </button>
 </view>
